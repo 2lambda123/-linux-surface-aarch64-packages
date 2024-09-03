@@ -69,7 +69,7 @@ jobs:
 
     steps:
     - name: Download artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: linux-firmware-aarch64-latest
         path: linux-firmware-aarch64-latest
@@ -96,7 +96,7 @@ jobs:
         pacman -S --noconfirm base-devel git
 
     - name: Download artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: linux-firmware-aarch64-latest
         path: linux-firmware-aarch64-latest
